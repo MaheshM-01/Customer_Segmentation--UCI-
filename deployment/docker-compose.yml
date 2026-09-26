@@ -1,0 +1,23 @@
+# Docker Compose configuration for Customer Segmentation Service
+version: '3.8'
+
+services:
+  customer-segmentation-api:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: customer_segmentation_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ../data:/app/data
+      - ../models:/app/models
+      - ../logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

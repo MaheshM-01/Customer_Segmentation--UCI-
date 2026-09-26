@@ -1,0 +1,15 @@
+
+scikit-learn
+pandas 
+numpy
+matplotlib
+seaborn
+fastapi
+uvicorn
+joblib
+pytest
+omegaconf
+pytest-cov
+docker
+pytest-docker
+shap

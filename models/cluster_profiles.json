@@ -1,0 +1,202 @@
+{
+    "0": {
+        "persona_name": "Champions / VIP",
+        "strategy": "VIP perks, exclusive rewards, early product access, dedicated support",
+        "customer_count": 881,
+        "percentage_of_base": 20.31,
+        "metrics": {
+            "Recency": {
+                "mean": 140.17,
+                "median": 90.0,
+                "min": 1.0,
+                "max": 374.0
+            },
+            "Frequency": {
+                "mean": 1.05,
+                "median": 1.0,
+                "min": 1.0,
+                "max": 4.0
+            },
+            "Monetary": {
+                "mean": 548.7,
+                "median": 382.8,
+                "min": 154.99,
+                "max": 10449.54
+            },
+            "AvgOrderValue": {
+                "mean": 516.22,
+                "median": 371.01,
+                "min": 154.99,
+                "max": 6207.67
+            },
+            "ProductVariety": {
+                "mean": 30.62,
+                "median": 23.0,
+                "min": 1.0,
+                "max": 219.0
+            },
+            "LifespanDays": {
+                "mean": 0.01,
+                "median": 0.0,
+                "min": 0.0,
+                "max": 3.0
+            },
+            "CLV_score": {
+                "mean": 14.02,
+                "median": 4.55,
+                "min": 0.54,
+                "max": 2612.38
+            }
+        }
+    },
+    "1": {
+        "persona_name": "Loyal & High Spenders",
+        "strategy": "Upsell premium products, personalized recommendations, loyalty incentives",
+        "customer_count": 1651,
+        "percentage_of_base": 38.06,
+        "metrics": {
+            "Recency": {
+                "mean": 76.26,
+                "median": 50.0,
+                "min": 1.0,
+                "max": 358.0
+            },
+            "Frequency": {
+                "mean": 3.2,
+                "median": 3.0,
+                "min": 2.0,
+                "max": 39.0
+            },
+            "Monetary": {
+                "mean": 794.58,
+                "median": 709.38,
+                "min": 36.56,
+                "max": 2424.04
+            },
+            "AvgOrderValue": {
+                "mean": 267.33,
+                "median": 235.04,
+                "min": 9.14,
+                "max": 1020.05
+            },
+            "ProductVariety": {
+                "mean": 50.74,
+                "median": 40.0,
+                "min": 1.0,
+                "max": 421.0
+            },
+            "LifespanDays": {
+                "mean": 165.5,
+                "median": 161.0,
+                "min": 4.0,
+                "max": 371.0
+            },
+            "CLV_score": {
+                "mean": 5981.17,
+                "median": 2132.83,
+                "min": 7.09,
+                "max": 184790.51
+            }
+        }
+    },
+    "2": {
+        "persona_name": "Potential & Active Shoppers",
+        "strategy": "Incentivize repeat purchase frequency with limited-time promotions.",
+        "customer_count": 700,
+        "percentage_of_base": 16.14,
+        "metrics": {
+            "Recency": {
+                "mean": 175.5,
+                "median": 177.0,
+                "min": 1.0,
+                "max": 374.0
+            },
+            "Frequency": {
+                "mean": 1.08,
+                "median": 1.0,
+                "min": 1.0,
+                "max": 4.0
+            },
+            "Monetary": {
+                "mean": 145.05,
+                "median": 140.44,
+                "min": 3.75,
+                "max": 437.82
+            },
+            "AvgOrderValue": {
+                "mean": 138.43,
+                "median": 135.92,
+                "min": 3.45,
+                "max": 403.25
+            },
+            "ProductVariety": {
+                "mean": 11.83,
+                "median": 9.0,
+                "min": 1.0,
+                "max": 81.0
+            },
+            "LifespanDays": {
+                "mean": 0.25,
+                "median": 0.0,
+                "min": 0.0,
+                "max": 30.0
+            },
+            "CLV_score": {
+                "mean": 2.98,
+                "median": 0.85,
+                "min": 0.01,
+                "max": 113.69
+            }
+        }
+    },
+    "3": {
+        "persona_name": "At-Risk / Inactive",
+        "strategy": "Win-back email campaigns, churn feedback surveys, re-activation discounts.",
+        "customer_count": 1106,
+        "percentage_of_base": 25.5,
+        "metrics": {
+            "Recency": {
+                "mean": 26.38,
+                "median": 15.0,
+                "min": 1.0,
+                "max": 372.0
+            },
+            "Frequency": {
+                "mean": 10.46,
+                "median": 7.0,
+                "min": 2.0,
+                "max": 209.0
+            },
+            "Monetary": {
+                "mean": 5854.34,
+                "median": 2892.19,
+                "min": 645.12,
+                "max": 271504.7
+            },
+            "AvgOrderValue": {
+                "mean": 546.06,
+                "median": 415.96,
+                "min": 101.72,
+                "max": 5852.5
+            },
+            "ProductVariety": {
+                "mean": 133.6,
+                "median": 102.0,
+                "min": 1.0,
+                "max": 1787.0
+            },
+            "LifespanDays": {
+                "mean": 264.43,
+                "median": 291.0,
+                "min": 0.0,
+                "max": 373.0
+            },
+            "CLV_score": {
+                "mean": 357769.91,
+                "median": 50254.17,
+                "min": 28.91,
+                "max": 46378106.35
+            }
+        }
+    }
+}

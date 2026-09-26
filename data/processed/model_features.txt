@@ -1,0 +1,14 @@
+Recency
+Frequency
+Monetary
+AvgOrderValue
+ProductVariety
+LifespanDays
+PurchaseRate
+AvgDaysBetweenPurchases
+SpendPerProduct
+QtyPerOrder
+RevenuePerDay
+UniqueProductPct
+OrderValueConsistency
+CLV_score

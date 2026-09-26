@@ -1,0 +1,96 @@
+# Central configuration file for Customer Segmentation & Analytics
+
+project:
+  name: "customer-segmentation"
+  version: "0.1.0"
+  random_seed: 42
+
+paths:
+  raw_data_dir: "data/raw/online+retail"
+  raw_data_file: "data/raw/online+retail/Online Retail.xlsx"
+  processed_dir: "data/processed"
+  models_dir: "models"
+  logs_dir: "logs"
+  rfm_features_csv: "data/processed/rfm_features.csv"
+  processed_features_npy: "data/processed/x_processed.npy"
+  model_features_txt: "data/processed/model_features.txt"
+  association_rules_csv: "data/processed/association_rules.csv"
+  preprocessor_path: "models/preprocessor.joblib"
+  kmeans_model_path: "models/kmeans_cluster.joblib"
+  isolation_forest_model_path: "models/isolation_forest_model.joblib"
+  pca_transformer_path: "models/pca_transformer.joblib"
+  cluster_profiles_json: "models/cluster_profiles.json"
+
+cleaning:
+  drop_missing_customer_id: true
+  min_quantity: 1
+  min_unit_price: 0.001
+  outlier_quantile: 0.999
+  cancellation_prefix: "C"
+
+features:
+  n_rfm_bins: 5
+  clipping_lower_quantile: 0.01
+  clipping_upper_quantile: 0.99
+  model_features:
+    - "Recency"
+    - "Frequency"
+    - "Monetary"
+    - "AvgOrderValue"
+    - "ProductVariety"
+    - "LifespanDays"
+    - "PurchaseRate"
+    - "AvgDaysBetweenPurchases"
+    - "SpendPerProduct"
+    - "QtyPerOrder"
+    - "RevenuePerDay"
+    - "UniqueProductPct"
+    - "OrderValueConsistency"
+    - "CLV_score"
+
+clustering:
+  n_clusters: 4
+  init_method: "k-means++"
+  n_init: 20
+  max_iter: 300
+  random_state: 42
+  personas:
+    0: "Champions / VIP"
+    1: "Loyal & High Spenders"
+    2: "Potential & Active Shoppers"
+    3: "At-Risk / Inactive"
+  strategies:
+    0: "VIP perks, exclusive rewards, early product access, dedicated support"
+    1: "Upsell premium products, personalized recommendations, loyalty incentives"
+    2: "Incentivize repeat purchase frequency with limited-time promotions."
+    3: "Win-back email campaigns, churn feedback surveys, re-activation discounts."
+
+anomaly_detection:
+  contamination: 0.03
+  n_estimators: 100
+  random_state: 42
+  n_jobs: -1
+
+market_basket:
+  top_n_products: 100
+  min_support: 0.01
+  min_confidence: 0.3
+  min_lift: 1.0
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  title: "Customer Segmentation & Analytics API"
+
+mlflow:
+  enabled: true
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "Customer_Segmentation_UCI"
+  registered_model_name: "Customer-Segmentation-Production"
+  log_models: true
+
+monitoring:
+  baseline_features_csv: "data/processed/rfm_features.csv"
+  drift_threshold_psi: 0.25
+  drift_threshold_ks_pvalue: 0.05
+  cluster_shift_threshold: 0.10
